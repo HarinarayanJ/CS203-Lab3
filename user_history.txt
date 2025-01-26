@@ -1,0 +1,41 @@
+history -c && history -w 
+history
+sudo apt list | grep -i python3.10 
+lynx https://www.python.org/downloads/source
+gzip -d Python-3.10.15.tgz
+tar -xf Python-3.10.15.tar
+wget openssl.org/source/openssl-1.1.1t.tar.gz
+gzip -d openssl-1.1.1t.tar.gz
+tar -xf openssl-1.1.1t.tar
+./Configure --prefix=$HOME/os --openssldir=$HOME/os shared zlib
+cd openssl-1.1.1t
+./Configure --prefix=$HOME/os --openssldir=$HOME/os shared zlib
+./Configure --prefix=$HOME/os --openssldir=$HOME/os shared zlib gcc ./config --prefix=$HOME/os --openssldir=$HOME/os shared zlib vim Makefile
+make -j2
+make install -j10
+vim ~/.bashrc
+source /.bashrc
+echo "$LD_LIBRARY_PATH"
+echo "$PATH"
+export CFLAGS="-I$HOME/os/include"
+echo "$CFLAGS"
+export LDFLAGS="-I$HOME/os/lib"
+echo "$LDFLAGS"
+ls
+Is /Home/user1/os
+ls /Home/user1
+ls /home/user1
+ls /home/user1/0s
+ls /home/user1/os/lib
+cd Python-3.10.15/
+cd
+cd Python-3.10.15/
+./configure --prefix=$HOME/python3.10 --with-openssl=$HOME/os
+vim Makefile
+make - j2
+make install -j20
+vim /.bashrc
+source /.bashrc
+label-studio
+python3.10 -m ensurepip
+python3.10 -m pip install --upgrade pip python3.10 pip install venv label-studio python3.10-m pip install venv label-studio python3.10 -m pip install venv label-studio python3.10 -m pip install label-studio label-studio
