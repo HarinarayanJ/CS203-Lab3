@@ -10,7 +10,9 @@ tar -xf openssl-1.1.1t.tar
 ./Configure --prefix=$HOME/os --openssldir=$HOME/os shared zlib
 cd openssl-1.1.1t
 ./Configure --prefix=$HOME/os --openssldir=$HOME/os shared zlib
-./Configure --prefix=$HOME/os --openssldir=$HOME/os shared zlib gcc ./config --prefix=$HOME/os --openssldir=$HOME/os shared zlib vim Makefile
+./Configure --prefix=$HOME/os --openssldir=$HOME/os shared zlib gcc 
+./config --prefix=$HOME/os --openssldir=$HOME/os shared zlib 
+vim Makefile
 make -j2
 make install -j10
 vim ~/.bashrc
@@ -38,4 +40,9 @@ vim /.bashrc
 source /.bashrc
 label-studio
 python3.10 -m ensurepip
-python3.10 -m pip install --upgrade pip python3.10 pip install venv label-studio python3.10-m pip install venv label-studio python3.10 -m pip install venv label-studio python3.10 -m pip install label-studio label-studio
+python3.10 -m pip install --upgrade pip 
+python3.10 pip install venv label-studio 
+python3.10-m pip install venv label-studio
+python3.10 -m pip install venv label-studio 
+python3.10 -m pip install label-studio 
+label-studio
